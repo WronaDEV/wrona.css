@@ -1,0 +1,113 @@
+/*
+
+wrona.css | Made by Wrona
+
+*/
+
+/*
+IMPORT IMPORTANT LINKS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*
+SETTING DEFAULT SETTINGS TO TAGS
+*/
+
+:root {
+    --nav-size: 1120px;
+}
+
+body {
+    margin: 0;
+}
+
+/*
+POSITION TAGS
+*/
+
+.w-center-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-left-child {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.w-right-child {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.w-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.w-left {
+    position: absolute;
+    left: 0;
+}
+
+.w-right {
+    position: absolute;
+    right: 0;
+}
+
+/*
+EXAMPLES TO USE
+*/
+
+.w-full-navbar {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+}
+
+.w-navbar {
+    position: fixed;
+    width: var(--nav-size);
+    height: 45px;
+    margin: 0;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1120px) {
+    .w-navbar {
+        width: 100%;
+        margin-top: 0;
+        top: 0;
+        background: rgba( 0, 0, 0, 0.25 );
+        backdrop-filter: blur( 8px );
+        -webkit-backdrop-filter: blur( 8px );
+    }
+}
+
+.w-nav-main-text {
+    cursor: pointer;
+    color: white;
+    margin-left: 20px;
+    margin-top: 9px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.w-nav-div1 {
+    display: flex;
+    top: 0;
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    place-items: center;
+}
