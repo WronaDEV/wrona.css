@@ -1,6 +1,6 @@
 # wrona.css
 
-CSS Framework created by Wrona
+🎨 CSS Framework created by Wrona.
 
 ## How to import?
 Just paste that code in head tag
